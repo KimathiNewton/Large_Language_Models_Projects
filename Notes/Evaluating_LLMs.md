@@ -183,16 +183,16 @@ BLEU isn't returning just one number. The first metric is labeled as 'bleu' and 
     considerable difference, suggesting that the sentence structure 
     Google produces is much closer to the reference translation than the 
     one NLLB achieves.
-• Brevity_penalty: The brevity penalty is primarily an internal 
-multiplier that affects the overall BLEU score, penalizing translations 
-that contain fewer words than the reference text. Values of 1 or 
-higher indicate that the translated text contains more words than the 
-reference text. NLLB has a brevity penalty of 0.98, while Google has 
-a penalty of 0.93. This tells us two things: first, that NLLB has created 
-a translation with a length very similar to the reference, and second, 
-that if Google had used a couple more words, its score would have 
-been even better, further surpassing NLLB.
-• Length_ratio: Indicates the relationship between the length of the 
-generated text and the reference texts. The closer it is to 1, the more 
-similar the lengths of the texts are. It is calculated using translation_
-length and reference_length.
+* Brevity_penalty: The brevity penalty is primarily an internal 
+    multiplier that affects the overall BLEU score, penalizing translations 
+    that contain fewer words than the reference text. Values of 1 or 
+    higher indicate that the translated text contains more words than the 
+    reference text. NLLB has a brevity penalty of 0.98, while Google has 
+    a penalty of 0.93. This tells us two things: first, that NLLB has created 
+    a translation with a length very similar to the reference, and second, 
+    that if Google had used a couple more words, its score would have 
+    been even better, further surpassing NLLB.
+* Length_ratio: Indicates the relationship between the length of the 
+    generated text and the reference texts. The closer it is to 1, the more 
+    similar the lengths of the texts are. It is calculated using translation_
+    length and reference_length.
