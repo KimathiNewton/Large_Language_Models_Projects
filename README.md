@@ -57,3 +57,7 @@ every time the information is modified.
 * There is no mechanism to make the model forget something it has already learned.
 * Information increases periodically. In such a case, performing fine-tuning on the model periodically is not the most optimal 
 approach either
+
+* The temperature parameter is set to 0, indicating that we want the model to be as 
+deterministic as possible. The temperature value ranges from 0 to 2, and the higher it is, 
+the more imaginative and random the model’s response will be.
